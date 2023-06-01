@@ -203,13 +203,10 @@ joinServerImg.src = "/textures/buttons/serverselect.png";
 //Audio
 
 const mainMusic = new Audio();
-mainMusic.src = "/audio/crossWorldleSoundTrackLoop4.wav";
+mainMusic.src = "/audio/crossWorldleSoundTrackLoop4.2.mp3";
 
 const calm2 = new Audio();
-calm2.src = "/audio/crossWordleCalm2.wav";
-
-const calm3 = new Audio();
-calm3.src = "/audio/crossWordleCalm3.wav";
+calm2.src = "/audio/crossWordleCalm2.1.mp3";
 
 const music1 = new Audio();
 music1.src = "/audio/crossWordleMusic3.2.mp3";
@@ -1986,8 +1983,6 @@ function musicControls(){
 			mainMusic.currentTime = 0;
 			calm2.pause();
 			calm2.currentTime = 0;
-			calm3.pause();
-			calm3.currentTime = 0;
 			music1.pause();
 			music1.currentTime = 0;
 			musicPlaying = false;
@@ -2000,9 +1995,6 @@ function musicControls(){
 				calm2.play();
 				musicPlaying = true;
 			} else if (randomInt === 3) {
-				calm3.play();
-				musicPlaying = true;
-			} else if (randomInt === 4) {
 				music1.play();
 				musicPlaying = true;
 			}
@@ -2012,17 +2004,13 @@ function musicControls(){
 		if (button(50 + 250, 200, 50, 50, volumeDown)) {
 			mainMusic.volume = 0.8 * mainMusic.volume;
 			calm2.volume = 0.8 * calm2.volume;
-			calm3.volume = 0.8 * calm3.volume;
 			music1.volume = 0.8 * music1.volume;
 		}
 		if (button(150 + 250, 200, 50, 50, volumeUp)) {
 			mainMusic.volume = 1/(-4*mainMusic.volume - 1) + 1;
 			calm2.volume = 1/(-4*calm2.volume - 1) + 1;
-			calm3.volume = 1/(-4*calm3.volume - 1) + 1;
 			music1.volume = 1/(-4*music1.volume - 1) + 1;
 		}
-	} else {
-		return;
 	}
 };
 
