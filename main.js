@@ -1,7 +1,7 @@
 /*
 Jonathan Hanson, Zacarias Young
 
-index.js
+main.js
 
 Server-side javascript hosting engine
 
