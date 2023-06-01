@@ -7,7 +7,7 @@ Client side javascript program for crosswordle
 
 4.28.23
 */
-// Simulate an HTTP redirect:
+
 //Initalize the server communication handler
 const socket = io();
 //initalize canvas
