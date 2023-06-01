@@ -202,17 +202,17 @@ joinServerImg.src = "/textures/buttons/serverselect.png";
 //------------------------------------------------------------------------------------//
 //Audio
 
-mainMusic = new Audio();
+const mainMusic = new Audio();
 mainMusic.src = "/audio/crossWorldleSoundTrackLoop4.wav";
 
-calm2 = new Audio();
+const calm2 = new Audio();
 calm2.src = "/audio/crossWordleCalm2.wav";
 
-calm3 = new Audio();
+const calm3 = new Audio();
 calm3.src = "/audio/crossWordleCalm3.wav";
 
-music1 = new Audio();
-music1.src = "/audio/crossWordleMusic3.0.wav";
+const music1 = new Audio();
+music1.src = "/audio/crossWordleMusic3.2.mp3";
 
 //------------------------------------------------------------------------------------//
 //Blocky font Letter Images
